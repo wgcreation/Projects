@@ -1,0 +1,561 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="blossomcbse.master.cs" Inherits="blossomcbse" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-89126083-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-89126083-3');
+</script>
+
+    <title>Blossom International School</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+       <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Blossom School, Dombivali" />
+    <meta name="keywords" content="Cbse School in dombivali,dombivli school,blossom cbse school dombivli,dombivli east school,dombivli cbse east school" />
+    <meta name="author" content="Blossom School,mumbai,thane, dombivali,kalyan" />
+    <meta NAME="audience" content="all">
+    <meta NAME="distribution" content="global">
+    <meta NAME="copyright" content="by http://www.blossomcbse.in/">
+    <meta NAME="city" content="Dombivali">
+    <meta NAME="country" content="India">
+    <meta property="og:title" content="Blossom CBSE School" />
+    <meta property="og:description" content="Welcome to Blossom International School Dombivali - blossomcbse.in" />
+    <meta property="og:image" content="http://www.blossomcbse.in/images/Blogo.jpg" />
+    <meta property="og:url" content="http://www.blossomcbse.in/" />
+ <!-- Mobile Metas -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <!-- Mobile Metas -->
+    <!-- Web Fonts -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,600" rel="stylesheet"/>
+    <link rel="stylesheet" href="js/jQuery-fancyBox/source/jquery.fancybox.css" type="text/css" />
+    <link href="css/theme.css" rel="stylesheet" />
+    <link href="css/theme-responsive.css" rel="stylesheet" />
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+     
+    <link href="css/template-default.css" rel="stylesheet" />
+    <link href="css/swiper.css" rel="stylesheet" />
+    <link href="css/lightbox.min.css" rel="stylesheet" />
+  
+
+    <!-- Head Libs -->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/jQuery-html5shiv/src/html5shiv.js"></script>
+      <script src="js/jQuery-Respond/dest/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Libs -->
+    <!--    <script src="js/jQuery-bxSlider/jquery.bxslider.min.js"></script>-->
+    <script src="js/jQuery-fancyBox/source/jquery.fancybox.pack.js"></script>
+    <!--<script src="js/jQuery-Cookie/jquery.cookie.js"></script>-->
+    <script src="js/swiper.js"></script>
+
+    <!-- Theme Initializer -->
+
+         <!-- javascript -->  
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <%-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> --%>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- These are all the javascript files --> 
+ <%--   <script src="js/tab.js"></script>
+ --%>
+<script src="js/lightbox-plus-jquery.min.js"></script>
+    <script src="js/theme.js"></script>
+
+
+
+   <!-- <script type="text/javascript">
+        function toggleIcon(e) {
+            $(e.target)
+                .prev('.panel-heading')
+                .find(".more-less")
+                .toggleClass('glyphicon-plus glyphicon-minus');
+        }
+        $('.panel-group').on('hidden.bs.collapse', toggleIcon);
+        $('.panel-group').on('shown.bs.collapse', toggleIcon);
+    </script>-->
+    
+  
+  <%--  <script>
+        $(document).ready(function () {
+            // Show the Modal on load
+            $("#Popup").modal("show");
+            // Hide the Modal
+            $("#myBtn").click(function () {
+                $("#myModalp").modal("hide");
+            }
+                             );
+            // Show the Modal on load
+            $("#notify").modal("show");
+            // Hide the Modal
+            $("#myBtn").click(function () {
+                $("#dialog").modal("hide");
+            }
+                             );
+        }
+                         );
+    </script>--%>
+ <script>
+      $(window).scroll(function () {
+          var wscroll = $(this).scrollTop();
+          if (wscroll > 50) {
+              $(".nav-wrapper").addClass("shrink-nav");
+          }
+          else {
+              $(".nav-wrapper").removeClass("shrink-nav");
+          }
+      });
+  </script>
+ 
+
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+         <nav class="navbar navbar-default" role="navigation" style='margin-bottom: 0px;'>
+        <div class="container no_padding">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header" style="margin:0px;">
+               <%-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-brand-centered">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>--%>
+                <div class="navbar-brand navbar-brand-centered call"><a href="tel:+(91) 8976592465" style="color:#fff;" title="Admission Office Number"><strong> +(91) 8976592465 | </strong></a>  <a href="tel:+(91)-251-26512465" style="color:#fff ; " title="Admission Office Number"><strong>+(91)-251-2442210</strong></a> </div>
+            </div>
+
+
+            <div class="collapse navbar-collapse" id="navbar-brand-centered">
+
+<ul class="nav navbar-nav navbar-right top-header-pd">
+
+                                 <%--   <li><a href="#">Downloads</a></li>
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle text-white" data-toggle="dropdown"
+                           >Academic<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+
+                            <li><i class="fa fa-angle-double-right"></i> Activity Planner</li>
+                            <li><i class="fa fa-angle-double-right"></i> Students Zone</li>
+                            <li><i class="fa fa-angle-double-right"></i> CPG Reviews</li>
+                        </ul>
+                    </li>
+
+
+
+                    <li><a href="#">Teacher Login</a></li>
+
+                     <li><a href="#">Parent's Reviews</a></li>--%>
+                    <li><a href="#">
+                        <asp:Button ID="Button1" runat="server" Text="Admission Enquiry " CssClass="btn btn-info btn-sm dropdown-toggle" data-toggle="modal" data-target="#myModaReg" />
+
+                        
+
+                        </a></li>
+
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    <div style="background-color:#fff;">
+        <div class="container">
+            <div class="row no_margin">
+                <header id="header" class="clearfix">
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 ">
+                        <a href="index.aspx">
+                            <h1 class="logo">
+                                <img src="images/Blogo.png" alt="" title="" style="margin-bottom:5px;">
+                            </h1>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-5 col-xs-12  ">
+                        <div class="text-center top">
+                                <span class="text-black"><strong style="font-size:18px;">Admissions Open- Limited Classes </strong> <img src="images/New_icons_43.gif"></span> <br /> <i class="fa fa-check-circle"></i>  Blossom Buddies <i class="fa fa-tags" aria-hidden="true"></i> NURSERY TO UKG  <br /><i class="fa fa-check-circle"></i>Blossom CBSE School
+
+                            <i class="fa fa-tags" aria-hidden="true"></i> GRADE I TO VIII <hr style="margin-top:8px;margin-bottom:5px;">
+
+                             <span class="text-black"><strong style="font-size:18px; color:#333;"><a href="blog-index.aspx"> Blossom Blog </a></strong> <img src="images/New_icons_43.gif"></span>
+                        </div>
+                        
+                    </div>
+                   <div class="col-lg-5 col-md-5 col-sm-4 col-xs-12">
+                       
+                       <div class="row header-top text-right ">
+                           <div class="text-center top" >
+                                <span class="text-black" style="line-height:1;"><strong style="font-size:18px;">Blossom International School UDISE Number </strong><br />
+                                   <strong style="font-size:30px;">
+                                    27210608607</strong>
+                                </span>
+                           <%-- <div class="btn-group">
+                                <button type="button" class="btn btn-info btn-sm dropdown-toggle" data-toggle="dropdown">
+                                    Online Apply <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" role="menu" style="text-align: left;">
+                                    <li>
+                                        <a href="#" target="_blank">
+                                            <i class="fa fa-check-circle"></i> Admission Registration
+                                        </a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+                                    <li>
+                                        <a href="#" target="_blank"><i class="fa fa-check-circle"></i>Pay Fee Online</a>
+                                    </li>
+
+
+
+                                </ul>
+                            </div>
+
+                            <a href="#" data-toggle="modal" data-target="#myModaReg" class="btn btn-info btn-sm">Admission Enquiry</a>--%>
+
+
+
+                        </div>
+                    </div>
+                       </div>
+                </header>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <div class="nav-wrapper"  >
+            <div class="container">
+                <div class="row no_margin">
+
+
+
+                    <nav class="navbar navbar-default" role="navigation">
+                        <div class="navbar-header ">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navCollapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <i class="fa fa-bars"></i> Menu
+                            </button>
+                        </div>
+                        <div class="navigation collapse navbar-collapse" id="navCollapse">
+                            <ul class="nav navbar-nav nav-main">
+                                <li class="home-"><a href="http://blossomcbse.in/"><span class="btn btn-danger btn-xs"><strong>Home</strong></span></a></li>
+
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" href="#"><strong>About<i class="fa fa-angle-down"></i></strong></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="Blossom-aboutus.aspx"><i class="fa fa-check-circle"></i> About Us</a></li>
+                                        <li><a href="Blossom-aboutfounder.aspx"><i class="fa fa-check-circle"></i> About Founder &amp; Mangement </a></li>
+
+
+
+
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" href="#"><strong>Admission<i class="fa fa-angle-down"></i></strong> </a>
+                                    <ul class="dropdown-menu">
+                                  <%--      <li class="nested-dropdown">
+                                            <a href="#"><i class="fa fa-check-circle"></i> Seeking Admission</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#"><i class="fa fa-check-circle"></i> For Nursery to 8th</a></li>
+
+                                            </ul>
+                                        </li>--%>
+                                       <%-- <li class="nested-dropdown">
+                                            <a href="#"><i class="fa fa-check-circle"></i> Fees </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#"><i class="fa fa-check-circle"></i> Fee for session 2018-19</a></li>
+                                                <li><a href="courses/fee.html"><i class="fa fa-check-circle"></i> Fee for session 2017-18</a></li>
+                                            </ul>
+                                        </li>--%>
+                                        <%--<li><a href="#"><i class="fa fa-check-circle"></i> Admission Helpdesk</a></li>--%>
+                                        <li><a href="Blossom-requestschoolvisit.aspx"><i class="fa fa-check-circle"></i> Request a School Visit</a></li>
+                                        <%--<li><a href="#"><i class="fa fa-check-circle"></i> Admission Registration</a></li>--%>
+                                        <!-- <li><a href="#"><i class="fa fa-check-circle"></i> FAQs</a></li> -->
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" href="#"><strong>Workshop<i class="fa fa-angle-down"></i></strong> </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="Blossom-Photo.aspx">
+                                               Blossom Workshop 
+                                                <img src="images/New_icons_43.gif">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" href="#"><strong>Student  Life<i class="fa fa-angle-down"></i></strong> </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#"><i class="fa fa-check-circle"></i> Life @ Campus</a></li>
+                                      <%--  <li class="nested-dropdown">
+                                            <a href="#"><i class="fa fa-check-circle"></i> Life @ Campus</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#"><i class="fa fa-check-circle"></i> Life Skill Development</a></li>
+                                                <li><a href="#"><i class="fa fa-check-circle"></i> Recreation</a></li>
+                                                <li><a href="#"><i class="fa fa-check-circle"></i> Sports</a></li>
+                                            </ul>
+                                        </li>--%>
+                                        <%--<li><a href="#"><i class="fa fa-check-circle"></i> Living at Blossom</a></li>--%>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" href="#"><strong>Academic  &amp; Learning<i class="fa fa-angle-down"></i></strong></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="Blossom-concept.aspx"><i class="fa fa-check-circle"></i> Blossom Concept</a></li>
+                                        <%--<li><a href="#"><i class="fa fa-check-circle"></i> School Curriculum</a></li>--%>
+                                        <li><a href="Blossom-Photo.aspx"><i class="fa fa-check-circle"></i> Integrated Coaching</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" href="javascript:;"> <strong>Achievements<i class="fa fa-angle-down"></i></strong></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="Blossom-academicsachievements.aspx"><i class="fa fa-check-circle"></i> Academics Achievements</a></li>
+                                        <li><a href="Blossom-sportsachievements.aspx"><i class="fa fa-check-circle"></i> Sports Achievements</a></li>
+
+                                    </ul>
+                                </li>
+
+                                <!--<li><a href="#"><strong>Hostel</strong></a></li>-->
+                              <li class="dropdown">
+                                    <a class="dropdown-toggle" href="#"><strong>Blossom Tour<i class="fa fa-angle-down"></i></strong> </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#"><i class="fa fa-check-circle"></i> Campus Tour (Photos)</a></li>
+                                        <li><a href="#"><i class="fa fa-check-circle"></i> Campus Tour (Video)</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" href="#"><strong>Media<i class="fa fa-angle-down"></i></strong> </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="Blossom-gallery.aspx"><i class="fa fa-check-circle"></i> Photo Gallery</a></li>
+                                      <%--  <li><a href="#"><i class="fa fa-check-circle"></i> News in Media</a></li>--%>
+                                        <!--<li><a href="#"><i class="fa fa-check-circle"></i> Video Gallery</a></li><li><a href="#"><i class="fa fa-check-circle"></i> Parenting Tips</a></li> -->
+                                    </ul>
+                                </li>
+                               <%-- <li class="dropdown">
+                                    <a class="dropdown-toggle" href="#"><strong>Results<i class="fa fa-angle-down"></i></strong> </a>
+                                    <ul class="dropdown-menu">
+                                        
+                                        <li><a href="#"><i class="fa fa-check-circle"></i> Result Highlights</a></li>
+                                    </ul>
+                                </li--%>
+                                <li><a href="blog-index.aspx"><span class="blog_btn"><strong>Blog</strong></span></a></li>
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" href="#"><strong>Contact<i class="fa fa-angle-down"></i></strong> </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="Blossom-contactus.aspx"><i class="fa fa-check-circle"></i> Contact Us</a></li>
+                                        <%--<li><a href="#"><i class="fa fa-check-circle"></i> Road Map</a></li>--%>
+                                    </ul>
+                                </li>
+
+
+                            </ul>
+
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+
+
+
+            <div class="clearfix"></div>
+        </div>
+        <div id="myModaReg" class="modal fade in" role="dialog"  aria-hidden="false">
+       <div class="modal-dialog modal-sm">
+            <!-- Modal content-->
+           <div class="trans_box3">
+            <div class="modal-content" style="top:0px;">
+                <div class="modal-header">
+                   <a href="#" class="fancybox-item fancybox-close" data-dismiss="modal">×</a>
+                </div>
+                <div class="modal-body">
+                    <iframe src="enquiry/leads/email.aspx" style="border: 0; width: 100%;
+                    height: 270px;"></iframe>
+                </div>
+           </div>
+            </div>
+      </div>
+    </div>
+    </div>
+
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+         <asp:ContentPlaceHolder id="ContentPlaceHolder2" runat="server">
+         
+        </asp:ContentPlaceHolder>
+         <!-- FOOTER -->
+    <footer id="footer">
+
+        <div class="container">
+            <div class="row no_margin">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="footer-widget">
+
+                        <!--<i class="fa fa-phone-square"></i> +91-744-3040000-->
+                        <img src="images/Blogo.png" alt="blossom" style="margin-bottom:5px;" />
+
+
+                        <p>
+                            <strong style="font-size:16px;">Blossom with Integrated Coaching</strong><br />
+                            Blossom CBSE School is one of the school established and administered by the General Education Institute, Dadar. School is a well known for its unique & pioneering approach to education. It aims at providing excellence in education and proper concentration of fact thereby imbibing perfection , literacy, moral value, technical intricacies and physical development irrespective of religion, race, language or any other discrepancy
+                        </p>
+                        <p style="margin-top:20px;">
+                            <a href="http://facebook.com/blossom.dombivli" target="_blank"><img src="images/facebook.png" alt="Blossom facebook" width="22" height="22" style="margin:5px;"></a>
+                            <a href="#" target="_blank"><img src="images/twitter.png" alt="twitter" width="22" height="22" style="margin:5px;"></a>
+                            <a href="#" target="_blank"><img src="images/youtube.png" alt="Blossom youtube" width="22" height="22" style="margin:5px;"></a>
+                            <a href="#" target="_blank"><img src="images/Google-plus.png" alt="google plus" width="22" height="22" style="margin:5px;"></a>
+                        </p>
+                    </div>
+
+
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12" style="padding-left:40px;">
+                    <div class="footer-widget contact-details1">
+                        <div class="media-body"><h4 class="media-heading1"> <strong>Important Links</strong></h4></div>
+                        <ul class="media-list">
+                            <li><a href="Blossom-aboutus.aspx" target="_blank"><i class="fa fa-angle-double-right"></i> About</a></li>
+                            <li><a href="Blossom-requestschoolvisit.aspx" target="_blank"><i class="fa fa-angle-double-right"></i> Admission</a></li>
+                            <li><a href="Blossom-Photo.aspx" target="_blank"><i class="fa fa-angle-double-right"></i> Workshop</a></li>
+                            <li><a href="Blossom-concept.aspx" target="_blank"><i class="fa fa-angle-double-right"></i> Academic  & Learning</a></li>
+                            <li><a href="Blossom-academicsachievements.aspx" target="_blank"><i class="fa fa-angle-double-right"></i> Achievements</a></li>
+                           <%-- <li><a href="#" target="_blank"><i class="fa fa-angle-double-right"></i> Blossom Tour</a></li>--%>
+                            <li><a href="#" target="_blank"><i class="fa fa-angle-double-right"></i> Media </a></li>
+                            <li><a href="blog-index.aspx" target="_blank"><i class="fa fa-angle-double-right"></i> Blossom Blog </a></li>
+
+                        </ul>
+
+
+                    </div>
+
+                    <div class="footer-widget contact-details1">
+                        <div class="media-body"><h4 class="media-heading1"> <strong>Other Links:</strong></h4></div>
+                        <ul class="media-list">
+                            <li><a href="#" target="_blank"><i class="fa fa-angle-double-right"></i> Results</a></li>
+                            <li><a href="#" target="_blank"><i class="fa fa-angle-double-right"></i> Download Links</a></li>
+
+                            <li><a href="#" target="_blank"><i class="fa fa-angle-double-right"></i>Parent's Reviews</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                    <div class="footer-widget contact-details">
+                        <ul class="media-list">
+                            <li class="media">
+                                <div class="media-body">
+                                    <h1>
+                                        Get In Touch
+
+
+                                    </h1>
+                                </div>
+                            </li>
+                            <li class="media">
+                                <a class="pull-left">
+                                   <i class="fa fa-university" aria-hidden="true"></i>
+                                </a>
+                                <div class="media-body">
+                                    <h4 class="media-heading"> <strong>Admission Office:</strong></h4>
+                                    <p>S V Joshi Vidya Sankul, Nehru Road, Dombivli East, Thane - 421201 </p>
+                                </div>
+                            </li>
+
+                            <li class="media">
+                                <a class="pull-left" href="javascript:;">
+                                   <i class="fa fa-phone" aria-hidden="true"></i>
+                                </a>
+                                <div class="media-body">
+                                    <h4 class="media-heading"><strong>Phone Number:</strong></h4>
+                                    <p>+(91)-251-2442210, 8976592465 </p>
+                                </div>
+                            </li>
+                            <li class="media">
+                                <a class="pull-left" href="javascript:;">
+                                   <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                                </a>
+                                <div class="media-body">
+                                    <h4 class="media-heading"><strong>Email | SMS:</strong></h4>
+                                    <p>Mail : <a href="mailto:blossomcbse@gmail.com" style="color:#333;">blossomcbse@gmail.com  </a>
+
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- PRIVACY SECTION -->
+   <%-- <div class="footer-privacy">
+        <div class="container">
+            <div class="row no_margin">
+                <ul>
+                    <li><a href="#">Refund &amp; Cancellation</a></li>
+                    <li><a href="#">Payment Terms</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>--%>
+
+
+    <div class="footer-copyright">
+        <div class="container">
+            <div class="row no_margin">
+                <div class="copyright">
+                    Copyright &copy 2018 Blossom. All Rights Reserved
+                </div>
+            </div>
+        </div>
+
+
+        <div id="Popup" class="modal fade in" role="dialog" aria-hidden="false" style="display: none;">
+            <div class="modal-dialog modal-lg">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header" style="color: #fff;">
+                        <a href="#" class="fancybox-item fancybox-close" data-dismiss="modal"></a>
+
+                    </div>
+                    <div class="modal-body">
+                       
+                            <img src="images/home/admission-201888.jpg" alt="Blossom admission-2018.jpg" class="img-responsive" style="margin:0 auto;">
+                       
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <%--<div id="backTopWrapp" class="hidden-xs">
+            <div class="back-top-btn">
+                <span id="scrollTop">
+                    <i class="fa fa-angle-up"></i>
+                </span>
+            </div>
+        </div>--%>
+
+    </div>
+
+   
+    </div>
+    </form>
+</body>
+</html>
